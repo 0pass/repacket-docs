@@ -102,7 +102,15 @@
     {
       "group": "Modules",
       "pages": [
-        "modules/access",
+        {
+          "group": "Access",
+          "icon": "key",
+          "pages": [
+            "modules/access/users",
+            "modules/access/groups",
+            "modules/access/devices"
+          ]
+        },
         "modules/app-discovery",
         {
           "group": "Gateway",
