@@ -102,6 +102,7 @@
     {
       "group": "Modules",
       "pages": [
+        "modules/access",
         "modules/app-discovery",
         "modules/firewall",
         {
