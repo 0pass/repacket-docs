@@ -122,7 +122,16 @@
             "modules/session-protection"
           ]
         },
-        "modules/dlp"
+        "modules/dlp",
+        {
+          "group": "Logs",
+          "icon": "file-lines",
+          "pages": [
+            "modules/logs/alerts",
+            "modules/logs/audit-logs",
+            "modules/logs/uploads"
+          ]
+        }
       ]
     },
     {
