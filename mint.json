@@ -130,7 +130,16 @@
             "modules/session-protection"
           ]
         },
-        "modules/dlp",
+        {
+          "group": "Data Loss Prevention",
+          "icon": "binary-lock",
+          "pages": [
+            "modules/dlp/rules",
+            "modules/dlp/ai-filters",
+            "modules/dlp/patterns",
+            "modules/dlp/testing"
+          ]
+        },
         {
           "group": "Logs",
           "icon": "file-lines",

@@ -1,5 +1,5 @@
 ---
-title: "Data Loss Prevention (DLP)"
+title: "Rules"
 icon: "binary-lock"
 description: "Apply advanced controls to safeguard sensitive data"
 ---
@@ -79,13 +79,14 @@ The DLP system operates by analyzing traffic based on the configured rules and a
 ## Related Features
 
 <CardGroup cols={2}>
-  <Card title="Firewall" icon="filter" href="/modules/firewall">
-    Control internet access with granular access rules
+  <Card title="AI Filters" icon="sparkles" href="/modules/dlp/ai-filters">
+    Configure AI-powered detection filters for sensitive data
   </Card>
-  <Card title="Categories" icon="folder-tree" href="/config/categories">
-    Use predefined or custom categories for policy configuration
+  <Card title="Patterns" icon="magnifying-glass" href="/modules/dlp/patterns">
+    Configure pattern-based detection for sensitive data
   </Card>
-  <Card title="User Management" icon="users" href="/config/identity">
-    Manage users and groups for rule targeting
+  <Card title="Testing" icon="flask" href="/modules/dlp/testing">
+    Test DLP filters against uploaded files before enforcing in production
   </Card>
 </CardGroup>
+

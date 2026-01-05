@@ -1,0 +1,88 @@
+---
+title: "Patterns"
+icon: "magnifying-glass"
+description: "Configure pattern-based detection for sensitive data"
+---
+
+## Overview
+
+Patterns enable you to detect sensitive data using predefined or custom pattern matching rules. These patterns can identify structured data formats like credit card numbers, Social Security Numbers, email addresses, and other sensitive information based on recognizable patterns and formats.
+
+<img src="/images/DLP-patterns.png" alt="DLP Patterns configuration" />
+
+## How Patterns Work
+
+Pattern-based detection uses regular expressions and predefined templates to identify sensitive information in content. This method is particularly effective for detecting structured data that follows consistent formats, such as:
+
+- Credit card numbers (16-digit sequences with specific validation)
+- Social Security Numbers (XXX-XX-XXXX format)
+- Phone numbers (various international formats)
+- Email addresses
+- IP addresses
+- Custom patterns specific to your organization
+
+## Pattern Types
+
+<CardGroup cols={2}>
+  <Card title="Predefined Patterns" icon="list" color="#07edb5">
+    Use built-in patterns for common sensitive data types like SSNs, credit cards, and more.
+  </Card>
+  <Card title="Custom Patterns" icon="pen" color="#07edb5">
+    Create custom regex patterns to match organization-specific sensitive data formats.
+  </Card>
+  <Card title="Pattern Groups" icon="layer-group" color="#07edb5">
+    Organize patterns into groups for easier management and rule assignment.
+  </Card>
+  <Card title="Pattern Validation" icon="check-circle" color="#07edb5">
+    Validate patterns against sample data to ensure accurate detection.
+  </Card>
+</CardGroup>
+
+## Creating Custom Patterns
+
+<Steps>
+  <Step title="Navigate to Patterns">
+    Go to the [Data Loss Prevention](https://app.repacket.com/dlp) section and select the Patterns tab.
+  </Step>
+  <Step title="Create a new pattern">
+    Click the "Create new pattern" button to define a custom detection pattern.
+  </Step>
+  <Step title="Define the pattern">
+    Enter a regular expression or use the pattern builder to define what should be detected.
+  </Step>
+  <Step title="Test your pattern">
+    Use the test feature to verify your pattern matches the intended data formats.
+  </Step>
+  <Step title="Assign to rules">
+    Apply your pattern to DLP rules to enable detection across your organization.
+  </Step>
+</Steps>
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion title="Start with Predefined Patterns">
+    Begin with built-in patterns for common data types before creating custom patterns.
+  </Accordion>
+  <Accordion title="Test Thoroughly">
+    Always test patterns against sample data to avoid false positives or negatives.
+  </Accordion>
+  <Accordion title="Combine with Other Detection Methods">
+    Use patterns alongside AI Filters for comprehensive sensitive data detection.
+  </Accordion>
+</AccordionGroup>
+
+## Related Features
+
+<CardGroup cols={2}>
+  <Card title="Rules" icon="binary-lock" href="/modules/dlp/rules">
+    Configure DLP rules to safeguard sensitive data
+  </Card>
+  <Card title="AI Filters" icon="sparkles" href="/modules/dlp/ai-filters">
+    Configure AI-powered detection filters for sensitive data
+  </Card>
+  <Card title="Testing" icon="flask" href="/modules/dlp/testing">
+    Test DLP filters against uploaded files before enforcing in production
+  </Card>
+</CardGroup>
+
