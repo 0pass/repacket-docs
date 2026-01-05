@@ -104,18 +104,24 @@
       "pages": [
         "modules/access",
         "modules/app-discovery",
-        "modules/firewall",
+        {
+          "group": "Gateway",
+          "icon": "network-wired",
+          "pages": [
+            "modules/firewall",
+            "modules/protections",
+            "modules/bypass",
+            "modules/jit-exceptions"
+          ]
+        },
         {
           "group": "Protections",
           "icon": "shield-halved",
           "pages": [
-            "modules/protections",
             "modules/phishing-prevention",
             "modules/session-protection"
           ]
         },
-        "modules/bypass",
-        "modules/jit-exceptions",
         "modules/dlp"
       ]
     },
