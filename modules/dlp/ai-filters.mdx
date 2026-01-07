@@ -6,13 +6,40 @@ description: "Configure AI-powered detection filters for sensitive data"
 
 ## Overview
 
-AI Filters leverage advanced machine learning capabilities to detect and protect sensitive data across your organization. These filters use sophisticated pattern recognition to identify sensitive information that may not be caught by traditional rule-based detection methods.
+AI Filters leverage advanced machine learning capabilities to detect and protect sensitive data across your organization.
 
-<img src="/images/DLP-ai.png" alt="AI Filters configuration" />
+By default, we provide a set of filters that you can use immediately. These predefined filters are designed to detect common types of sensitive information. Additionally, you can create your own custom AI filters tailored to your organization's specific needs.
 
-## How AI Filters Work
+<img src="/images/DLP-ai-table.png" alt="AI Filters table" />
 
-AI Filters analyze content using advanced algorithms that can recognize patterns, context, and relationships in data. This enables more accurate detection of sensitive information across various formats and contexts.
+## Creating Custom AI Filters
+
+You can create your own AI filters to detect specific types of content, patterns, or sensitive information that are unique to your organization.
+
+<Steps>
+  <Step title="Navigate to AI Filters">
+    Go to the Data Loss Prevention page and select the [AI Filters tab](https://app.repacket.com/dlp#filters).
+  </Step>
+  <Step title="Create a new filter">
+    Click the "Create New Filter" button to start creating your custom AI filter.
+  </Step>
+  <Step title="Describe what to detect">
+    In natural language, describe what you want this filter to detect. Be specific about the type of content, patterns, or sensitive information you want to identify. Since it's AI-powered, the system will analyze your description and configure the filter accordingly.
+    
+    <img src="/images/DLP-ai.png" alt="AI Filters configuration" />
+    
+    For example, you might describe:
+    - "Detect customer account numbers in the format ACC-XXXX-XXXX"
+    - "Identify internal project code names and proprietary terminology"
+    - "Find financial transaction details and payment information"
+  </Step>
+  <Step title="Save your filter">
+    Once you've described what you want to detect, save your filter. The AI will process your description and configure the detection capabilities.
+  </Step>
+  <Step title="Assign to rules">
+    Apply your AI filter to DLP rules to enable detection across your organization.
+  </Step>
+</Steps>
 
 ## Related Features
 
