@@ -104,17 +104,17 @@
           "icon": "network-wired",
           "pages": [
             "modules/firewall",
-            "modules/protections",
             "modules/bypass",
-            "modules/jit-exceptions"
-          ]
-        },
-        {
-          "group": "Protections",
-          "icon": "shield-halved",
-          "pages": [
-            "modules/phishing-prevention",
-            "modules/session-protection"
+            "modules/jit-exceptions",
+            {
+              "group": "Protections",
+              "icon": "shield-halved",
+              "pages": [
+                "modules/protections",
+                "modules/phishing-prevention",
+                "modules/session-protection"
+              ]
+            }
           ]
         },
         {
