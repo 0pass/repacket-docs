@@ -77,8 +77,9 @@
       ]
     },
     {
-      "group": "Configuration",
+      "group": "Modules",
       "pages": [
+        "modules/templates",
         {
           "group": "Entities",
           "icon": "layer-group",
@@ -87,21 +88,6 @@
             "config/categories"
           ]
         },
-        "config/modules",
-        "modules/templates",
-        {
-          "group": "Advanced",
-          "icon": "table-tree",
-          "pages": [
-            "config/advanced",
-            "config/schema"
-          ]
-        }
-      ]
-    },
-    {
-      "group": "Modules",
-      "pages": [
         {
           "group": "Access",
           "icon": "key",
@@ -147,6 +133,20 @@
             "modules/logs/alerts",
             "modules/logs/audit-logs",
             "modules/logs/uploads"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Configuration",
+      "pages": [
+        "config/modules",
+        {
+          "group": "Advanced",
+          "icon": "table-tree",
+          "pages": [
+            "config/advanced",
+            "config/schema"
           ]
         }
       ]
