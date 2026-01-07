@@ -10,7 +10,7 @@ description: "Allow temporary access to blocked categories when needed"
 
 ## Overview
 
-Just-in-Time Exceptions allow users to request temporary access to websites or categories that are blocked by your [Firewall rules](/modules/firewall). This feature provides a balance between security and productivity, enabling legitimate business needs while maintaining your organization's security posture.
+Just-in-Time Exceptions allow users to request temporary access to websites or [categories](/config/categories) that are blocked by your [Firewall rules](/modules/firewall). This feature provides a balance between security and productivity, enabling legitimate business needs while maintaining your organization's security posture.
 
 <CardGroup cols={2}>
   <Card title="User-Initiated Requests" icon="user-plus" color="#07edb5">
@@ -38,7 +38,7 @@ Just-in-Time Exceptions provide a workflow for users to request temporary access
 
 ## User Experience: Requesting Exceptions
 
-When users encounter a blocked website or category, they see a block page with an option to request an exception. Users can click to request temporary access and provide a business justification for their request.
+When users encounter a blocked website or [category](/config/categories), they see a block page with an option to request an exception. Users can click to request temporary access and provide a business justification for their request.
 
 ![](/images/exception-request-block.png)
 
@@ -93,13 +93,13 @@ Clicking on any request in the table opens a details panel where you can review 
     Configure JIT exceptions to require users to provide a business justification when requesting access. This helps administrators make informed decisions and creates an audit trail.
   </Accordion>
   <Accordion title="Set Appropriate Durations">
-    Use shorter durations (1-4 hours) for high-risk categories and longer durations (1 day) for lower-risk categories that may have legitimate business uses.
+    Use shorter durations (1-4 hours) for high-risk [categories](/config/categories) and longer durations (1 day) for lower-risk [categories](/config/categories) that may have legitimate business uses.
   </Accordion>
   <Accordion title="Review Exception Patterns">
-    Regularly review exception requests to identify patterns. If certain categories or domains are frequently requested, consider creating permanent exceptions or adjusting your [Firewall rules](/modules/firewall).
+    Regularly review exception requests to identify patterns. If certain [categories](/config/categories) or domains are frequently requested, consider creating permanent exceptions or adjusting your [Firewall rules](/modules/firewall).
   </Accordion>
   <Accordion title="Use Role-Based Auto-Approval">
-    For trusted user groups or low-risk categories, consider enabling auto-approval to reduce administrative overhead while maintaining security.
+    For trusted user groups or low-risk [categories](/config/categories), consider enabling auto-approval to reduce administrative overhead while maintaining security.
   </Accordion>
   <Accordion title="Monitor Exception Usage">
     Track which users and groups request the most exceptions to identify training opportunities or policy adjustments.

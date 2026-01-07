@@ -85,7 +85,8 @@
           "icon": "layer-group",
           "pages": [
             "config/entities",
-            "config/categories"
+            "config/categories",
+            "config/domain-info"
           ]
         },
         {
