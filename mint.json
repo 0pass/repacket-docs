@@ -77,8 +77,23 @@
       ]
     },
     {
+      "group": "Configuration",
+      "pages": [
+        "config/modules",
+        {
+          "group": "Advanced",
+          "icon": "table-tree",
+          "pages": [
+            "config/advanced",
+            "config/schema"
+          ]
+        }
+      ]
+    },
+    {
       "group": "Modules",
       "pages": [
+        "modules/dashboard",
         "modules/templates",
         {
           "group": "Entities",
@@ -134,20 +149,6 @@
             "modules/logs/alerts",
             "modules/logs/audit-logs",
             "modules/logs/uploads"
-          ]
-        }
-      ]
-    },
-    {
-      "group": "Configuration",
-      "pages": [
-        "config/modules",
-        {
-          "group": "Advanced",
-          "icon": "table-tree",
-          "pages": [
-            "config/advanced",
-            "config/schema"
           ]
         }
       ]
