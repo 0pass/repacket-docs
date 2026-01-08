@@ -3,11 +3,17 @@ title: "Entities"
 description: "Targets for applying security and policy features within Repacket"
 ---
 
-<Note>Entities are getting a large overhaul early April 2025 to support more dynamic options.</Note>
+<Note>
+  Entities are the traffic targets for configuration in Repacket. They let you define what properties we should match against to enforce your rules, including custom categories and IP ranges.
+</Note>
 
-## What are entities?
+## Creating Entities
 
-Entities are the traffic targets for configuration in Repacket. They let you define what properties we should match against to enforce your rule. 
+To create a new entity, navigate to the [Entities page](https://app.repacket.com/entities#entities) in your Repacket dashboard and click the "Create" button.
+
+<Frame>
+  <img src="/images/entities-create.png" alt="Creating an entity" style={{maxWidth: '600px', width: '100%'}} />
+</Frame>
 
 ## Entity types
 
@@ -20,7 +26,9 @@ Categories represent a group of domains. These can include wildcards, *and often
 Repacket ships with nearly [80 default categories](/config/categories).
 
 <Expandable title="categories example">
-    ![](/images/custom-category.png)
+    <Frame>
+      ![](/images/custom-category.png)
+    </Frame>
 </Expandable>
 
 

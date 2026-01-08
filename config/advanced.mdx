@@ -188,6 +188,6 @@ The `__default__` template contains the following overrideable blocks:
 We provide variables that templates can use to provide more useful information when a page is blocked. These can be substituted by writing `{{ var_name }}` in the template. The variables provided are defined in `config.proto`'s `message TemplateFields`.
 
 ## Categories
-In addition to matching against single domains or domains with wildcards, `Rule`s can match against whole categories of domains. A collection of default categories is provided, and custom categories can be created. See the Categories page for more information.
+In addition to matching against single domains or domains with wildcards, `Rule`s can match against whole [categories](/config/categories) of domains. A collection of default [categories](/config/categories) is provided, and custom [categories](/config/categories) can be created. See the [Categories](/config/categories) page for more information.
 
-Each custom category contains a list of domains - literal or wildcard. If a custom category has the same name as a previous category, it overrides it. This works for overriding the built-in categories too.
+Each custom [category](/config/categories) contains a list of domains - literal or wildcard. If a custom [category](/config/categories) has the same name as a previous [category](/config/categories), it overrides it. This works for overriding the built-in [categories](/config/categories) too.

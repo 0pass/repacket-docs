@@ -1,0 +1,105 @@
+---
+title: "Testing"
+icon: "flask"
+description: "Test DLP filters against uploaded files before enforcing in production"
+---
+
+## Overview
+
+The Testing feature allows you to verify whether your DLP rules correctly detect sensitive data before they are enforced in production. Upload files and test them against your configured DLP filters to ensure accurate detection and avoid false positives.
+
+## How It Works
+
+Test DLP matching by selecting a DLP filter and uploading files to see whether they trigger the selected filter. The system processes the files and generates an analytics report showing which files matched and which did not.
+
+<Frame>
+  <img src="/images/DLP-testing-uploads.png" alt="DLP Testing - Upload files interface" />
+</Frame>
+
+## Testing DLP Filters
+
+<Steps>
+  <Step title="Select a DLP Filter">
+    Choose one of your enabled DLP filters to test against uploaded files. For example, select the Personal Health Information (PHI) filter to test detection of patient names, medical record numbers, diagnoses, medications, and other healthcare data.
+  </Step>
+  <Step title="Upload Files">
+    Upload up to 5 files at once to test against the selected filter. Supported formats include: .txt, .doc, .docx, .pdf, .csv, .json, and .xml.
+  </Step>
+  <Step title="Review Results">
+    After processing, the system generates an Analytics Report summarizing the results, showing which files matched the filter and which did not.
+  </Step>
+</Steps>
+
+## Analytics Report
+
+The Analytics Report provides a comprehensive summary of the test results, including overall statistics and file-level breakdowns.
+
+<Frame>
+  <img src="/images/DLP-testing-report.png" alt="DLP Testing - Analytics Report results" />
+</Frame>
+
+### Overall Results
+
+The report shows:
+- Total files processed
+- Number of matches found
+- Number of files with no match
+
+This helps confirm that your DLP filter is working correctly—sensitive documents are flagged while non-relevant files are not falsely detected.
+
+### File-Level Breakdown
+
+Each file in the test receives one of two results:
+
+**✅ Matched** — The file contains sensitive data relevant to the selected filter. The report details what types of sensitive information were detected.
+
+**❌ No Match** — The file does not contain sensitive data relevant to the selected filter. No action is required.
+
+## Key Features
+
+<CardGroup cols={2}>
+  <Card title="Multiple File Testing" icon="file-upload" color="#07edb5">
+    Test up to 5 files simultaneously against your DLP filters
+  </Card>
+  <Card title="Multiple Formats" icon="file" color="#07edb5">
+    Support for .txt, .doc, .docx, .pdf, .csv, .json, and .xml files
+  </Card>
+  <Card title="Detailed Reports" icon="chart-line" color="#07edb5">
+    Get comprehensive analytics showing what sensitive data was detected
+  </Card>
+  <Card title="Pre-Production Validation" icon="shield-check" color="#07edb5">
+    Verify filter accuracy before enforcing rules in production
+  </Card>
+</CardGroup>
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion title="Test Before Enforcing">
+    Always test your DLP filters against sample files before enabling them in production to ensure accurate detection.
+  </Accordion>
+  <Accordion title="Use Representative Samples">
+    Test with files that represent the types of content your organization typically handles to validate real-world scenarios.
+  </Accordion>
+  <Accordion title="Review False Positives">
+    If a file incorrectly matches, review the detected content to refine your filter configuration.
+  </Accordion>
+  <Accordion title="Test Multiple Filters">
+    Test different DLP filters (PHI, PII, PCI, etc.) to ensure each one works as expected for its specific data type.
+  </Accordion>
+</AccordionGroup>
+
+## Related Features
+
+<CardGroup cols={2}>
+  <Card title="Rules" icon="binary-lock" href="/modules/dlp/rules">
+    Configure DLP rules to safeguard sensitive data
+  </Card>
+  <Card title="AI Filters" icon="sparkles" href="/modules/dlp/ai-filters">
+    Configure AI-powered detection filters for sensitive data
+  </Card>
+  <Card title="Patterns" icon="magnifying-glass" href="/modules/dlp/patterns">
+    Configure pattern-based detection for sensitive data
+  </Card>
+</CardGroup>
+

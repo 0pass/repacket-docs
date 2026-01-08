@@ -17,7 +17,7 @@ Bypass rules enable you to exclude specific traffic from Repacket's interception
     Traffic matching bypass rules is completely ignored by the Repacket agent
   </Card>
   <Card title="Traffic-Based Rules" icon="filter" color="#07edb5">
-    Define bypass rules based on websites, categories, IP ranges, or domains
+    Define bypass rules based on websites, [categories](/config/categories), IP ranges, or domains
   </Card>
   <Card title="Identity-Based Targeting" icon="user-gear" color="#07edb5">
     Apply bypass rules to specific users, groups, or devices
@@ -48,7 +48,9 @@ This is fundamentally different from Firewall Block rules, which still intercept
 
 ## Creating Bypass Rules
 
-![](/images/bypass-rule.png)
+<Frame>
+  ![](/images/bypass-rule.png)
+</Frame>
 
 <Steps>
   <Step title="Navigate to Bypass Settings">
@@ -65,7 +67,7 @@ This is fundamentally different from Firewall Block rules, which still intercept
     
     Select an attribute from the dropdown:
     - **All Websites**: Bypass all web traffic
-    - **Content Categories**: Bypass specific categories of websites
+    - **Content Categories**: Bypass specific [categories](/config/categories) of websites
     - **IP Range**: Bypass traffic to specific IP address ranges
     - **Domain**: Bypass traffic to specific domains
     
@@ -109,7 +111,7 @@ Bypass rules support several traffic matching attributes:
 Bypass all web traffic for the specified identity conditions. Use this sparingly, as it completely disables Repacket for matching users or devices.
 
 ### Content Categories
-Bypass traffic to specific content categories (e.g., Business, Technology, Social Media). Useful for bypassing entire categories of websites that need direct access.
+Bypass traffic to specific content [categories](/config/categories) (e.g., Business, Technology, Social Media). Useful for bypassing entire [categories](/config/categories) of websites that need direct access.
 
 ### IP Range
 Bypass traffic to specific IP address ranges. Ideal for:

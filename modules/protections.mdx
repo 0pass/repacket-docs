@@ -23,9 +23,11 @@ The Protections module provides advanced protection capabilities that you can la
 
 ## How It Works
 
-The Protections module operates through a unified rule builder that allows administrators to apply specific protection types to defined traffic categories or applications.
+The Protections module operates through a unified rule builder that allows administrators to apply specific protection types to defined traffic [categories](/config/categories) or applications.
 
-<img src="/images/protections-rule.png" alt="Protection rules builder interface showing spearphishing rule" />
+<Frame>
+  <img src="/images/protections-rule.png" alt="Protection rules builder interface showing spearphishing rule" />
+</Frame>
 
 ### AI Phishing Scan
 
@@ -66,7 +68,7 @@ You can read more about this feature on our [Session Protection documentation](/
   <Step title="Configure matching criteria">
     For Session Protection: Select specific applications from the dropdown (Google, Atlassian, etc.)
     
-    For Phishing Prevention: Choose categories or domains to apply the protection to
+    For Phishing Prevention: Choose [categories](/config/categories) or domains to apply the protection to
   </Step>
   <Step title="(Optional) Select specific users">
     Define which users or groups the rule should apply to or exclude.
@@ -104,13 +106,16 @@ You can read more about this feature on our [Session Protection documentation](/
   <Card title="Firewall" icon="filter" href="/modules/firewall">
     Control internet access with granular access rules
   </Card>
-  <Card title="Data Loss Prevention" icon="binary-lock" href="/modules/dlp">
-    Prevent sensitive data from being uploaded to unapproved platforms
+  <Card title="Bypass" icon="route" href="/modules/bypass">
+    Exclude specific traffic from Repacket interception entirely
   </Card>
-  <Card title="Custom Categories" icon="folder-plus" href="/config/categories">
-    Create your own categories for more targeted protection
+  <Card title="Just-in-Time Exceptions" icon="clock" href="/modules/jit-exceptions">
+    Allow temporary access to blocked categories when needed
   </Card>
-  <Card title="User Management" icon="users" href="/config/identity">
-    Manage users and groups for exception handling
+  <Card title="Phishing Prevention" icon="fishing-rod" href="/modules/phishing-prevention">
+    Detect and block sophisticated phishing attempts using AI and known-bad sites
+  </Card>
+  <Card title="Session Protection" icon="shield" href="/modules/session-protection">
+    Prevent session hijacking by encrypting cookies for critical applications
   </Card>
 </CardGroup> 

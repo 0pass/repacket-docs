@@ -1,5 +1,5 @@
 ---
-title: "Data Loss Prevention (DLP)"
+title: "Rules"
 icon: "binary-lock"
 description: "Apply advanced controls to safeguard sensitive data"
 ---
@@ -29,7 +29,9 @@ Today, Repacket enables organizations to detect and take action on a wide variet
 
 The DLP system operates by analyzing traffic based on the configured rules and applying specified actions when sensitive data is detected. Rules can be tailored to specific applications, users, and analysis types.
 
-<img src="/images/block-phi-chatgpt.png" alt="Setting a Block rule for PHI on ChatGPT" />
+<Frame>
+  <img src="/images/dlp-rule-form.png" alt="DLP rule form configuration" />
+</Frame>
 
 ## Creating DLP Rules
 
@@ -44,7 +46,7 @@ The DLP system operates by analyzing traffic based on the configured rules and a
       Give your rule a descriptive name (e.g., "Block Healthcare Upload to ChatGPT").
   </Step>
   <Step title="Select matching rules">
-    Select what traffic properties or categories this should apply to.
+    Select what traffic properties or [categories](/config/categories) this should apply to.
   </Step>
   <Step title="(Optional) Select specific users">
     Select users that this rule should or shouldn't apply to.
@@ -79,13 +81,14 @@ The DLP system operates by analyzing traffic based on the configured rules and a
 ## Related Features
 
 <CardGroup cols={2}>
-  <Card title="Firewall" icon="filter" href="/modules/firewall">
-    Control internet access with granular access rules
+  <Card title="AI Filters" icon="sparkles" href="/modules/dlp/ai-filters">
+    Configure AI-powered detection filters for sensitive data
   </Card>
-  <Card title="Categories" icon="folder-tree" href="/config/categories">
-    Use predefined or custom categories for policy configuration
+  <Card title="Patterns" icon="magnifying-glass" href="/modules/dlp/patterns">
+    Configure pattern-based detection for sensitive data
   </Card>
-  <Card title="User Management" icon="users" href="/config/identity">
-    Manage users and groups for rule targeting
+  <Card title="Testing" icon="flask" href="/modules/dlp/testing">
+    Test DLP filters against uploaded files before enforcing in production
   </Card>
 </CardGroup>
+

@@ -1,0 +1,74 @@
+---
+title: "AI Filters"
+icon: "sparkles"
+description: "Configure AI-powered detection filters for sensitive data"
+---
+
+## Overview
+
+AI Filters leverage advanced machine learning capabilities to detect and protect sensitive data across your organization.
+
+By default, we provide a set of filters that you can use immediately. These predefined filters are designed to detect common types of sensitive information. Additionally, you can create your own custom AI filters tailored to your organization's specific needs.
+
+<Frame>
+  <img src="/images/DLP-ai-table.png" alt="AI Filters table" />
+</Frame>
+
+## Creating Custom AI Filters
+
+You can create your own AI filters to detect specific types of content, patterns, or sensitive information that are unique to your organization.
+
+<Steps>
+  <Step title="Navigate to AI Filters">
+    Go to the Data Loss Prevention page and select the [AI Filters tab](https://app.repacket.com/dlp#filters).
+  </Step>
+  <Step title="Create a new filter">
+    Click the "Create New Filter" button to start creating your custom AI filter.
+  </Step>
+  <Step title="Describe what to detect">
+    In natural language, describe what you want this filter to detect. Be specific about the type of content, patterns, or sensitive information you want to identify. Since it's AI-powered, the system will analyze your description and configure the filter accordingly.
+    
+    <Frame>
+      <img src="/images/DLP-ai.png" alt="AI Filters configuration" />
+    </Frame>
+    
+    For example, you might describe:
+    - "Detect customer account numbers in the format ACC-XXXX-XXXX"
+    - "Identify internal project code names and proprietary terminology"
+    - "Find financial transaction details and payment information"
+  </Step>
+  <Step title="Save your filter">
+    Once you've described what you want to detect, save your filter. The AI will process your description and configure the detection capabilities.
+  </Step>
+  <Step title="Assign to rules">
+    Apply your AI filter to DLP rules to enable detection across your organization.
+  </Step>
+</Steps>
+
+## Using AI Filters in DLP Rules
+
+To utilize your AI filter in a DLP rule, navigate to the [Data Loss Prevention page](https://app.repacket.com/dlp) and create a new rule. When configuring the rule:
+
+1. Under **DLP Type**, select "AI Analysis"
+2. Under **DLP Filter**, select the AI filter you created
+
+<Frame>
+  <img src="/images/dlp-ai-filer-rule.png" alt="Configuring DLP rule with AI filter" />
+</Frame>
+
+This will apply your custom AI filter to the DLP rule, enabling it to detect the specific types of sensitive data you've configured.
+
+## Related Features
+
+<CardGroup cols={2}>
+  <Card title="Rules" icon="binary-lock" href="/modules/dlp/rules">
+    Configure DLP rules to safeguard sensitive data
+  </Card>
+  <Card title="Patterns" icon="magnifying-glass" href="/modules/dlp/patterns">
+    Configure pattern-based detection for sensitive data
+  </Card>
+  <Card title="Testing" icon="flask" href="/modules/dlp/testing">
+    Test DLP filters against uploaded files before enforcing in production
+  </Card>
+</CardGroup>
+

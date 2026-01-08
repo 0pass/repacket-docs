@@ -79,16 +79,7 @@
     {
       "group": "Configuration",
       "pages": [
-        {
-          "group": "Entities",
-          "icon": "layer-group",
-          "pages": [
-            "config/entities",
-            "config/categories"
-          ]
-        },
         "config/modules",
-        "modules/templates",
         {
           "group": "Advanced",
           "icon": "table-tree",
@@ -102,20 +93,64 @@
     {
       "group": "Modules",
       "pages": [
-        "modules/app-discovery",
-        "modules/firewall",
+        "modules/dashboard",
+        "modules/templates",
         {
-          "group": "Protections",
-          "icon": "shield-halved",
+          "group": "Entities",
+          "icon": "layer-group",
           "pages": [
-            "modules/protections",
-            "modules/phishing-prevention",
-            "modules/session-protection"
+            "config/entities",
+            "config/categories",
+            "config/domain-info"
           ]
         },
-        "modules/bypass",
-        "modules/jit-exceptions",
-        "modules/dlp"
+        {
+          "group": "Access",
+          "icon": "key",
+          "pages": [
+            "modules/access/users",
+            "modules/access/groups",
+            "modules/access/devices"
+          ]
+        },
+        "modules/app-discovery",
+        {
+          "group": "Gateway",
+          "icon": "network-wired",
+          "pages": [
+            "modules/firewall",
+            "modules/bypass",
+            "modules/jit-exceptions",
+            {
+              "group": "Protections",
+              "icon": "shield-halved",
+              "pages": [
+                "modules/protections",
+                "modules/phishing-prevention",
+                "modules/session-protection"
+              ]
+            }
+          ]
+        },
+        {
+          "group": "Data Loss Prevention",
+          "icon": "binary-lock",
+          "pages": [
+            "modules/dlp/rules",
+            "modules/dlp/ai-filters",
+            "modules/dlp/patterns",
+            "modules/dlp/testing"
+          ]
+        },
+        {
+          "group": "Logs",
+          "icon": "file-lines",
+          "pages": [
+            "modules/logs/alerts",
+            "modules/logs/audit-logs",
+            "modules/logs/uploads"
+          ]
+        }
       ]
     },
     {
